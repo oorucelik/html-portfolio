@@ -20,6 +20,9 @@
 .row{
     text-align:center;
 }
-#title-right{
-    text-align:right;
+#title-left{
+    text-align:left;
+}
+#title-center{
+    text-align:center;
 }
