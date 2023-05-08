@@ -17,12 +17,57 @@
         background-position: 0% 50%;
     }
 }
+@font-face {
+    font-family: Champagne;
+    src: url("ChampagneLimousines.ttf") format('truetype');
+}
+@font-face {
+    font-family: ChampagneBold;
+    src: url("ChampagneLimousines.ttf") format('truetype');
+}
+@font-face {
+    font-family: ChampagneItalic;
+    src: url('ChampagneLimousinesItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: ChampagneItalicBold;
+    src: url('ChampagneLimousinesBoldItalic.ttf') format('truetype');
+}
+
+
+#Champagne {
+    font-family: 'Champagne',
+}
+
+#ChampagneBold{
+    font-family: 'ChampagneBold',
+}
+#ChampagneItalic{
+    font-family: 'ChampagneItalic',
+}
+#ChampagneItalicBold {
+    font-family: 'ChampagneItalicBold',
+}
 .row{
     text-align:center;
 }
 #title-left{
     text-align:left;
+    
 }
 #title-center{
     text-align:center;
+}
+h1{
+    font-family:ChampagneBold;
+    font-size: xxx-large;
+}
+p {
+    font-family: ChampagneLimousinesItalic;
+    text-align:left;
+
+}
+#totalCount{
+    font-size:x-large;
 }
