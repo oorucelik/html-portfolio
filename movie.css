@@ -1,6 +1,8 @@
 .gradient-background {
-    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background: linear-gradient(100deg, #633B3B, #58181F, #624a2e, #F5F5DC);
+    
     background-size: 180% 180%;
+    
     animation: gradient-animation 18s ease infinite;
 }
 
@@ -52,22 +54,27 @@
 .row{
     text-align:center;
 }
-#title-left{
-    text-align:left;
-    
+#title-left {
+    text-align: left;
+    color: #a8a9ad;
 }
 #title-center{
     text-align:center;
 }
-h1{
-    font-family:ChampagneBold;
+h1 {
+    font-family: ChampagneBold;
     font-size: xxx-large;
+    color: #a8a9ad;
 }
 p {
     font-family: ChampagneLimousinesItalic;
     text-align:left;
 
 }
-#totalCount{
-    font-size:x-large;
+#totalCount {
+    font-size: x-large;
+    color: #a8a9ad;
+}
+body {
+    background-color: #e7ccba;
 }
