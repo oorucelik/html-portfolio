@@ -66,6 +66,9 @@ h1 {
     font-size: xxx-large;
     color: #a8a9ad;
 }
+h3{
+    margin-top:25px;
+}
 p {
     font-family: ChampagneLimousinesItalic;
     text-align:left;
@@ -76,5 +79,25 @@ p {
     color: #a8a9ad;
 }
 body {
-    background-color: #e7ccba;
+    background-color: #e7ccba90;
+}
+.row>.feature.col{
+    background-color: #deb88760;
+    border-radius: 20px;
+    margin-bottom: 35px;
+    margin-right:20px;
+}
+img {
+    object-fit: cover;
+    margin-top: 25px;
+    margin-right:25px;
+}
+
+@media(max-width:450px){
+    img {
+        object-fit: cover;
+        margin-top: 25px;
+        margin-right:25px;
+        float: left;
+    }
 }
