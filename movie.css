@@ -14,6 +14,9 @@
     border-radius: 20px;
     width: 40%;
     margin-bottom:5px;
+    font-family:Champagne;
+    font-size:16px;
+    font-weight:800;
 }
 
 @keyframes gradient-animation {
@@ -72,13 +75,20 @@ h1 {
     font-size: xxx-large;
     color: #a8a9ad;
 }
-h3{
-    margin-top:25px;
+h3 {
+    margin-top: 25px;
+    font-family: ChampagneBold;
+    font-weight:600;
+}
+strong {
+    font-family: ChampagneBold;
+    font-weight:600;
+    font-size:18px;
 }
 p {
-    font-family: ChampagneLimousinesItalic;
-    text-align:left;
-
+    font-family: ChampagneBold;
+    font-weight: 600;
+    font-size: 16px;
 }
 #totalCount {
     font-size: x-large;
@@ -87,23 +97,32 @@ p {
 body {
     background-color: white;
 }
+.top_Items{
+    display:grid;
+    margin-left:20px;
+}
 .row > .feature.col {
     background-color: #ededed;
     border-radius: 20px;
     margin-bottom: 35px;
     margin-right: 20px;
+
 }
 img {
     object-fit: cover;
     margin-top: 25px;
-    margin-right:25px;
 }
 
 @media(max-width:750px){
     img {
         object-fit: cover;
         margin-top: 25px;
-        margin-right:25px;
         float: left;
     }
 }
+/*@media (min-width: 1015px) {
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+}*/
