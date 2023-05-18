@@ -4,6 +4,16 @@
     background-size: 180% 180%;
     
     animation: gradient-animation 18s ease infinite;
+    margin-bottom:20px;
+    display:grid;
+    grid-template-columns:
+}
+.navbar {
+    padding: 0px;
+    background-color: #ededed !important;
+    border-radius: 20px;
+    width: 40%;
+    margin-bottom:5px;
 }
 
 @keyframes gradient-animation {
@@ -54,10 +64,6 @@
 .row{
     text-align:center;
 }
-#title-left {
-    text-align: left;
-    color: #a8a9ad;
-}
 #title-center{
     text-align:center;
 }
@@ -79,13 +85,13 @@ p {
     color: #a8a9ad;
 }
 body {
-    background-color: #e7ccba90;
+    background-color: white;
 }
-.row>.feature.col{
-    background-color: #deb88760;
+.row > .feature.col {
+    background-color: #ededed;
     border-radius: 20px;
     margin-bottom: 35px;
-    margin-right:20px;
+    margin-right: 20px;
 }
 img {
     object-fit: cover;
