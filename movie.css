@@ -101,6 +101,9 @@ body {
     display:grid;
     margin-left:20px;
 }
+.feature.col>p{
+    text-align:left;
+}
 .row > .feature.col {
     background-color: #ededed;
     border-radius: 20px;
@@ -115,9 +118,20 @@ img {
 
 @media(max-width:750px){
     img {
-        object-fit: cover;
-        margin-top: 25px;
         float: left;
+        object-fit: cover;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .row{
+        margin-left:10px
+    }
+    h3{
+        text-align:left;
+    }
+    strong{
+        text-align:left;
     }
 }
 /*@media (min-width: 1015px) {
