@@ -17,6 +17,7 @@
     font-family:Champagne;
     font-size:16px;
     font-weight:800;
+    letter-spacing:3px;
 }
 
 @keyframes gradient-animation {
@@ -69,6 +70,7 @@
 }
 #title-center{
     text-align:center;
+    letter-spacing:10px;
 }
 h1 {
     font-family: ChampagneBold;
@@ -79,16 +81,19 @@ h3 {
     margin-top: 25px;
     font-family: ChampagneBold;
     font-weight:600;
+    letter-spacing:4px;
 }
 strong {
     font-family: ChampagneBold;
     font-weight:600;
     font-size:18px;
+    letter-spacing:3px;
 }
 p {
     font-family: ChampagneBold;
     font-weight: 600;
     font-size: 16px;
+    letter-spacing:3px;
 }
 #totalCount {
     font-size: x-large;
