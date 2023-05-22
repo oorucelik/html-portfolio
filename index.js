@@ -16,11 +16,3 @@ function typeFilter(typeName) {
         }
     }
 }
-
-if (document.getElementsByClassName("btn-check")[0].checked == true) {
-    removeFilter();
-} else if (document.getElementsByClassName("btn-check")[1].checked == true) {
-    typeFilter('Film');
-} else if (document.getElementsByClassName("btn-check")[2].checked == true) {
-    typeFilter('Dizi');
-}
