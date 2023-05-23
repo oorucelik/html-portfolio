@@ -16,3 +16,7 @@ function typeFilter(typeName) {
         }
     }
 }
+//Türler string
+//document.getElementsByClassName("feature col")[0].getElementsByTagName("p")[2].textContent.slice(5)
+//first Tür
+//document.getElementsByClassName("feature col")[0].getElementsByTagName("p")[2].textContent.slice(5).split(", ")[0]
