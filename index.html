@@ -28,57 +28,139 @@
                             <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" onclick="removeFilter()" checked>
                             <label class="btn btn-secondary" for="option1">Hepsi</label>
 
-                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" onclick="typeFilter('Film')" >
+                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" onclick="typeFilter('Film')">
                             <label class="btn btn-secondary" for="option2">Filmler</label>
 
                             <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" onclick="typeFilter('Dizi')">
                             <label class="btn btn-secondary" for="option3">Diziler</label>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                     Türler
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class ="dropdown-item"  href="#">Aksiyon</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Komedi</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Polisiye</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Dram</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Gerilim</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Macera</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Fantastik</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Romantik</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Belgesel</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Biyografi</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Korku</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Gizem</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Animasyon</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Aile</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Bilim Kurgu</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Mini-Dizi</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Müzik</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Tarih</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Reality Şov</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Kısa Film</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Talk Şov</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Müzikal</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Spor</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Savaş</a></li>
-                                    <li><a class ="dropdown-item"  href="#">Yarışma</a></li>
-
+                                    <!--<li><a class ="dropdown-item"  href="#">Aksiyon</a></li>-->
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck1" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck1">Aksiyon</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck2" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck2">Komedi</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck3" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck3">Polisiye</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck4" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck4">Dram</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck5" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck5">Gerilim</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck6" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck6">Macera</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck7" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck7">Fantastik</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck8" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck8">Romantik</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck9" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck9">Belgesel</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck10" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck10">Biyografi</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck11" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck11">Korku</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck12" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck12">Gizem</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck13" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck13">Animasyon</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck14" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck14">Aile</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck15" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck15">Bilim Kurgu</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck16" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck16">Mini Dizi</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck17" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck17">Müzik</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck18" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck18">Tarih</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck19" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck19">Reality Şov</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck20" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck20">Kısa Film</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck21" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck21">Talk Şov</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck22" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck22">Müzikal</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck23" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck23">Spor</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck24" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck24">Savaş</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="btn-check dropdown-item" id="btncheck25" autocomplete="off" />
+                                        <label class="btn btn-light" for="btncheck25">Yarışma</label>
+                                    </li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Orucinephili</a></li>
+                                    <li>
+                                        <button onclick="removeGenreFilter()" type="button" class="dropdown-item btn-light" style="width:fit-content;"><img style="margin:0px !important" src="./reset_icon.png"></button>
+                                    </li>
                                 </ul>
                             </li>
                             <!--<li class="nav-item"><a class="nav-link disabled">Disabled</a></li>-->
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
-                            <button class="btn btn-outline-dark" type="submit">Ara</button>
+                            <button onclick="genreFilter()" class="btn" style="background-color:#6c757d;color:#fff;" type="submit">Ara</button>
                         </form>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
+    <!--<div class="alert alert-warning alert-dismissible fade show" style="display:'none'"; role="alert">
+        <strong>Tür Sınır Aşımı</strong> Limit 3tür.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+        -->
     <div class="row px-2">
         <div class="feature col"><img src="https://www.sinefil.com/cdn-a1-p/movie/0015/33/thumb_1432523_movie_default.webp" /><h3>Sandy Wexler</h3><strong>Film</strong><p><strong>Vizyon Yılı:</strong> 14 Nisan 2017</p><p><strong>IMDB:</strong> 5.2</p><p><strong>Tür:</strong> Komedi</p><p><strong>Süre:</strong> 2 Saat 10 Dk.</p></div>
         <div class="feature col"><img src="https://www.sinefil.com/cdn-a1-p/movie/0015/29/thumb_1428587_movie_default.webp" /><h3>Sleepless</h3><strong>Film</strong><p><strong>Vizyon Yılı:</strong> 5 Mayıs 2021</p><p><strong>IMDB:</strong> 5.6</p><p><strong>Tür:</strong> Aksiyon, Gerilim</p><p><strong>Süre:</strong> 1 Saat 35 Dk.</p></div>
@@ -864,7 +946,7 @@
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    
-    <script src="index.js" charset="utf-8"></script>    
- </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
 </html>

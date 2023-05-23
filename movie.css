@@ -120,6 +120,11 @@ img {
     object-fit: cover;
     margin-top: 25px;
 }
+#selected {
+    background-color: #6c757d50;
+}
+#genres{
+}
 
 @media(max-width:750px){
     img {
