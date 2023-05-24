@@ -48,7 +48,6 @@ function genreFilter() {
         }
     }
 }
-
 //Add eventListener:
 //document.querySelector("button").addEventListener("click",function);
 //Türler string
