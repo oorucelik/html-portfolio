@@ -16,7 +16,7 @@
         <!-- Title -->
         <div class="row top_Items">
             <h1 id="title-center">Orucinephili'ye Hoşgeldiniz</h1>
-            <p id="totalCount"><span style="font-size:smaller">Diziler: 169 Filmler: 608</span> Toplam: 777</p>
+            <p id="totalCount"></p>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
@@ -25,14 +25,18 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" onclick="removeFilter(); removeGenreFilter();" checked>
-                            <label class="btn btn-secondary" for="option1">Hepsi</label>
-
-                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" onclick="typeFilter('Film')">
-                            <label class="btn btn-secondary" for="option2">Filmler</label>
-
-                            <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" onclick="typeFilter('Dizi')">
-                            <label class="btn btn-secondary" for="option3">Diziler</label>
+                            <li>
+                                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" onclick="removeFilter(); removeGenreFilter(); refreshCounts();" checked>
+                                <label class="btn btn-secondary" for="option1">Hepsi</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" onclick="typeFilter('Film'); refreshCounts();">
+                                <label class="btn btn-secondary" for="option2">Filmler</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" onclick="typeFilter('Dizi');refreshCounts();">
+                                <label class="btn btn-secondary" for="option3">Diziler</label>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                     Türler
@@ -141,14 +145,14 @@
                                     </li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li>
-                                        <button onclick="removeGenreFilter()" type="button" class="dropdown-item btn-light" style="width:fit-content;"><img style="margin:0px !important" src="./reset_icon.png"></button>
+                                        <button onclick="removeGenreFilter(); refreshCounts();" type="button" class="dropdown-item btn-light" style="width:fit-content;"><img style="margin:0px !important" src="./reset_icon.png"></button>
                                     </li>
                                 </ul>
                             </li>
                             <!--<li class="nav-item"><a class="nav-link disabled">Disabled</a></li>-->
                         </ul>
                         <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
-                        <button onclick="genreFilter()" class="btn" style="background-color:#6c757d;color:#fff;" type="submit">Ara</button>
+                        <button onclick="removeFilter(); genreFilter(); refreshCounts();" class="btn" style="background-color:#6c757d;color:#fff;" type="submit">Ara</button>
                         </div>
                 </div>
             </nav>
