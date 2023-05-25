@@ -124,6 +124,7 @@ function refreshCounts() {
             document.querySelector("#totalCount").textContent = "Diziler: " + totalFilteredCards;
         } else if (selectedItemTextList.includes("Filmler") && selectedItemTextList.length == 1) {//If only Filmler has selected
             document.querySelector("#totalCount").textContent = "Filmler: " + totalFilteredCards;
+
         }
     }
 }
