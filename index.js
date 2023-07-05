@@ -142,6 +142,7 @@ function refreshCounts() {
             document.querySelector("#totalCount").textContent = "Filmler: " + totalFilteredCards;
         } else if (selectedItemTextList.includes("Hepsi") && selectedItemTextList.length > 1) {//If not only Hepsi has selected
             document.querySelector("#totalCount").textContent = genreTypeTxt + "Diziler ve Filmler: " + totalFilteredCards;
+        }
     }
 }
 //Add eventListener:
@@ -150,4 +151,3 @@ function refreshCounts() {
 //document.getElementsByClassName("feature col")[0].getElementsByTagName("p")[2].textContent.slice(5)
 //first Tür
 //document.getElementsByClassName("feature col")[0].getElementsByTagName("p")[2].textContent.slice(5).split(", ")[0]
-
