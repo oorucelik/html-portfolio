@@ -20,6 +20,22 @@ for (var i = 0; i <= totalCards - 1; i++) {
 var onloadTotalText = document.querySelector("#totalCount").textContent = "Diziler: " + totalDizi + " Filmler: " + totalFilm + " Toplam: " + (totalDizi + totalFilm);
 onload(onloadTotalText);//Refresh Toplam Count.
 
+function mouseOverCard(x) {
+    console.log("mousever");
+    x.parentElement.style.flex = "0";
+    x.parentElement.style.color = "red";
+
+}
+function mouseOutCard(x) {
+    console.log("mouseout");
+    x.style.flex = "1 0 0%";
+    x.parentElement.style.color = "blue";
+}
+for (var i = 0; i <= totalCards - 1; i++) {
+    var imgObj = document.querySelectorAll(".feature.col")[i].querySelector("img")
+    imgObj.addEventListener("mouseover", mouseOverCard(imgObj));
+    imgObj.addEventListener("mouseleave", mouseOutCard(imgObj));
+}
 //Hepsi Button//Display All Cards
 function removeFilter() {
     var cards = document.getElementsByClassName("feature col");
@@ -124,8 +140,8 @@ function refreshCounts() {
             document.querySelector("#totalCount").textContent = "Diziler: " + totalFilteredCards;
         } else if (selectedItemTextList.includes("Filmler") && selectedItemTextList.length == 1) {//If only Filmler has selected
             document.querySelector("#totalCount").textContent = "Filmler: " + totalFilteredCards;
-
-        }
+        } else if (selectedItemTextList.includes("Hepsi") && selectedItemTextList.length > 1) {//If not only Hepsi has selected
+            document.querySelector("#totalCount").textContent = genreTypeTxt + "Diziler ve Filmler: " + totalFilteredCards;
     }
 }
 //Add eventListener:
